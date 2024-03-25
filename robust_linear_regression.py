@@ -1,15 +1,14 @@
 import pickle
 
 import luigi
-from sklearn.metrics import mean_squared_error
 from sklearn.model_selection import train_test_split
-from sklearn.preprocessing import MinMaxScaler, RobustScaler
+from sklearn.preprocessing import RobustScaler
 
 from sklearn.datasets import load_diabetes
 import pandas as pd
 import numpy as np
-from pathlib import Path
-from sklearn.linear_model import LinearRegression, LassoLars
+
+from sklearn.linear_model import LinearRegression
 
 
 class LoadDiabetesData(luigi.Task):
