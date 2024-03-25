@@ -318,3 +318,4 @@ class ExecutePipeline(luigi.Task):
 
 if __name__ == '__main__':
     luigi.build([ExecutePipeline()], local_scheduler=True)
+
